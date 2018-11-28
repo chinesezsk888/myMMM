@@ -1,0 +1,193 @@
+// 引入common.less公共类
+@import "./common.less";
+//搜索
+.mm_search {
+  width: 100%;
+  height: 50rem / @base;
+  padding: 10rem / @base;
+  background-color: #fff;
+  input[type="text"] {
+    width: 660rem / @base;
+    height: 30rem / @base;
+    padding-left: 20rem / @base;
+    padding-right: 50rem / @base;
+    font-size: 14rem / @base;
+    border-radius: 15rem / @base;
+    background-color: #f1f1f1;
+  }
+  input[type="button"] {
+    height: 30rem / @base;
+    width: 63rem / @base;
+    border: none;
+    border-radius: 15rem / @base;
+    background-color: @myColor;
+    font-size: 16rem / @base;
+    color: #fff;
+    line-height: 30rem / @base;
+  }
+}
+
+//导航
+.mm_nav {
+  margin-top: 10rem / @base;
+  width: 100%;
+  padding: 10rem / @base;
+  background-color: #fff;
+  li {
+    float: left;
+    width: 25%;
+    height: 50%;
+    margin-bottom: 10rem / @base;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      .photo {
+        height: 50rem / @base;
+        width: 50rem / @base;
+        margin: 0 auto;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 14rem / @base;
+        text-align: center;
+        margin-top: 5rem / @base;
+      }
+    }
+  }
+}
+
+//超值优惠折扣
+.mm_discount {
+  width: 100%;
+  margin-top: 5rem / @base;
+  background-color: #fff;
+  .md_top {
+    height: 35rem / @base;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14rem / @base;
+    color: #fff;
+    background-color: @myColor;
+    line-height: 35rem / @base;
+    padding-left: 10rem / @base;
+    padding-right: 10rem / @base;
+    img {
+      display: block;
+      width: 20rem / @base;
+      height: 20rem / @base;
+      margin-top: 8rem / @base;
+    }
+  }
+
+  ul{
+      width: 100%;
+      li{
+        width:100%;
+        height:130rem/@base;
+        padding: 14rem/@base 8rem/@base;
+        border-bottom: 1px solid #ccc;
+        a{
+          width:100%;
+          height:100%;
+          display: block;
+          padding-left: 100rem/@base;
+          position: relative;
+          .left{
+          position: absolute;
+          left: 0;
+          top:0;
+          width:100rem/@base;
+          height:100rem/@base;
+          img{
+            width:100%;
+            height:100%;
+
+           }
+          }
+          .right{
+            width:100%;
+            height:100%;
+            text-indent: 15rem/@base;
+            .title{
+              width:100%;
+              height:60rem/@base;
+              font-size: 14rem/@base;
+              font-weight: normal;
+              span{
+                color:red;
+
+              }
+            }
+            .other{
+              font-size: 12rem/@base;
+              color:#B6A1B6;
+              display: flex;
+              justify-content: space-between;      
+              p:nth-child(2){
+                 i{
+                height: 15rem/@base;
+                width:14rem/@base;
+                background: url("../images/img/comment.svg") center no-repeat ;
+                // background-size: auto 100%;
+                // background-repeat: no-repeat;
+                // background-position: center;
+                background-size: 100% 100%;
+                vertical-align: middle;
+                display: inline-block;
+                margin-right: 4rem/@base;
+              }
+              }
+             
+            }
+          }
+        }
+        
+      }
+  }
+  // .more{
+  //   width:100%;
+  //   height: 100%;
+  //   margin-top: 10rem/@base;
+  //   pad
+    a.a_more{
+    display: block;
+    // width: 100%;
+    height: 30rem/@base;
+    border:1px solid #ccc;
+    border-radius: 2rem/@base;
+    margin:10rem/@base;
+    font-size: 14rem/@base;
+    text-align: center;
+    line-height: 30rem/@base;
+    box-sizing: border-box;
+    border-radius: 4rem/@base;
+  }
+  
+  
+}
+
+//品牌排行
+.mm_ranking{
+  width:100%;
+  height: 35rem/@base;
+  background-color: @myColor;
+  margin-top: 10rem/@base;
+  font-size: 16rem/@base;
+  line-height: 35rem/@base;
+  color:#fff;
+  padding-left: 10rem/@base;
+  display: flex;
+  justify-content: space-between;
+  img{
+    height: 20rem/@base;
+    width:20rem/@base;
+    margin: 8rem/@base 10rem/@base 0 0;
+    
+  }
+  margin-bottom: 27rem/@base;
+}

@@ -1,0 +1,98 @@
+// 引入common.less公共类
+@import "./common.less";
+.mm_search {
+    width: 100%;
+    height: 50rem / @base;
+    padding: 10rem / @base;
+    background-color: #fff;
+    input[type="text"] {
+        width: 660rem / @base;
+        height: 30rem / @base;
+        padding-left: 20rem / @base;
+        padding-right: 50rem / @base;
+        font-size: 14rem / @base;
+        border-radius: 15rem / @base;
+        background-color: #f1f1f1;
+    }
+    input[type="button"] {
+        height: 30rem / @base;
+        width: 63rem / @base;
+        border: none;
+        border-radius: 15rem / @base;
+        background-color: @myColor;
+        font-size: 16rem / @base;
+        color: #fff;
+        line-height: 30rem / @base;
+    }
+}
+
+//大标题
+.title {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10rem/@base;
+    .bigUl {
+        width: 100%;
+        .bigLi {
+            width: 100%;
+            .top {
+                width: 100%;
+                height: 40rem/@base;
+                background-color: #EDEDED;
+                border:1px solid #ccc;
+                border-radius: 4rem/@base;
+                // border-top-left-radius: 4rem/@base;
+                // border-top-right-radius: 4rem/@base;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 10rem/@base;
+                    font-weight: bold;
+                    font-size: 18rem/@base;
+                    line-height: 40rem/@base;
+                    display: flex;
+                    justify-content: space-between;
+                    .icon_down{
+                        height: 100%;
+                        width:40rem/@base;
+                        background-image: url('http://www.zuyushop.com/wap/images/arrow1.gif');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+
+                }
+            }
+            // .top:nth-child(1){
+            //     border-top-left-radius: 6rem/@base;
+            //     border-top-right-radius: 6rem/@base;
+            // }
+            // .top:nth-last-child(1){
+            //     border-bottom-left-radius: 6rem/@base;
+            //     border-bottom-right-radius: 6rem/@base;
+            // }
+
+            .smallUl{
+                width:100%;
+                li{
+                    float: left;
+                    width:33.33%;
+                    height:40rem/@base;
+                    background-color: #F9F9F9;
+                    border-bottom: 1px solid #ccc;
+                    border-right:1px solid #ccc;
+                    text-align: center;
+                    line-height: 40rem/@base;
+                    box-sizing: border-box;
+                    font-size: 16rem/@base;
+                    a{
+                        display: block;
+                        height:100%;
+                        width:100%;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+// 在normalize的基础上, 重置掉一些我们不需要的默认样式
+@import "./base.less";
+// 浏览器样式统一 normalize
+@import "./normalize.less";
+//设计图纸尺寸为750，根据flexible的出基准值为75
+@desgin: 750px;
+@base: @desgin/10;
+@myColor: #FF841D;
+
+
+
+//全屏容器
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.mmm {
+    width: 100%;
+   
+    padding-top: 50rem/@base;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+// 头部
+.mm_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50rem/@base;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 60%;
+    padding-right: 48rem/@base;
+    background: #FF841D;
+    .left,
+    .right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    .left {
+        left: 0;
+        width: 60%;
+        margin-left: 5rem/@base;
+        padding: 12rem/@base;
+        a{
+            display: block;
+            height: 25rem/@base;
+            width:50%;
+            img {
+            width: 100%;
+            height: 25rem/@base;
+        }
+        }
+       
+    }
+    .right {
+        right: 0;
+        width: 48rem/@base;
+        padding: 7rem/@base;
+        img {
+            width: 34rem/@base;
+            height: 34rem/@base;
+        }
+    }
+}
+
+//底部
+.mm_footer {
+    width: 100%;
+    ul {
+        width: 100%;
+        display: flex;
+        margin-bottom: 15rem/@base;
+        li {
+            width: 33.33%;
+            height: 34rem/@base;
+            border:1px solid #ccc;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 34rem/@base;
+                font-size: 16rem/@base;
+            }
+        }
+        li:nth-child(3) {
+            a {
+                img {
+                    width: 15rem/@base;
+                    height: 15rem/@base;
+                    display: inline-block;
+                }
+            }
+        }
+        li:nth-child(2){
+            border-left: none;
+            border-right:none;
+        }
+
+    }
+    p{
+        font-size: 12rem/@base; 
+        text-align: center;
+        a{
+           font-size: 12rem/@base; 
+        }
+        .download{
+            color:red;
+
+        }
+        span{
+            font-size: 12rem/@base; 
+        }
+    }
+
+
+}

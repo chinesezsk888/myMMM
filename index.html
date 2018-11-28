@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+
+    <!-- <link rel="stylesheet" href="./css/common.css"> -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="mmm">
+        <!-- 头部 -->
+        <div class="mm_header">
+            <div class="left">
+                <a class="logo" href="./index.html">
+                    <img src="./images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <img src="./images/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- 搜索 -->
+        <div class="mm_search">
+            <form class="form" action="#">
+                <input type="text" placeholder="请输入你想比价的商品" class="fl">
+                <input type="button" class="fr" value="搜索">
+            </form>
+        </div>
+        <!-- 导航 -->
+        <div class="mm_nav">
+            <ul class="clearfix">
+                <!-- 挖坑 -->
+            </ul>
+        </div>
+        <!-- 超值优惠折扣  -->
+        <div class="mm_discount">
+            <!-- 文字部分 -->
+            <div class="md_top">
+                <p>超值折扣和推荐</p>
+                <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+            </div>
+            <!-- 折扣商品 -->
+            
+            <ul>
+                <!-- 挖坑 -->
+
+            </ul>
+            <!-- 更多优惠按钮 -->
+         
+               <a href="#" class="a_more">更多优惠信息>></a>
+           
+        </div>
+        <!-- 品牌排行 -->
+        <div class="mm_ranking">
+            <span>品牌排行</span>
+            <img src="http://www.zuyushop.com/wap/images/more.png" alt="" class="img_more">
+     
+        </div>
+        <!-- 底部 -->
+        <div class="mm_footer">
+           <ul>
+               <li><a class="enter">登录</a></li>
+               <li><a class="register">注册</a></li>
+               <li><a class="goback"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></li>
+           </ul>
+           <p>
+               <a href="#" class="download">手机APP下载</a>
+               <a href="#">慢慢买手机版</a>
+               <span>--掌上比价平台</span>
+           </p>
+           <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+
+    <!-- 导航栏准备的数据 -->
+    <script type="text/html" id="navTpl">
+        {{each result v i}}
+    <li class="{{v.indexmenuId===7?'more':''}}">
+        <a href="#">
+            <div class="photo">{{@v.img}}</div>
+            <p>{{v.name}}</p>
+        </a>
+    </li>
+    {{/each}}
+   </script>
+    <!-- 折扣商品准备的数据  -->
+    <script type="text/html" id="discountTpl">
+        {{each result v i}}
+        <li>
+            <a href="#">
+                <div class="left">
+                    {{@v.productImg2}}
+                </div>
+                <div class="right">
+                    <div class="title">{{v.productName}} <span>{{v.productPinkage}}</span></div>
+                    <div class="other">
+                        <p>{{v.productFrom}}<span>|</span>{{v.productTime}}</p>
+                        <!-- 用slice(start,end)截取字符串：得到评论的个数 -->
+                        <p><i class="icon-comment"></i>{{v.productComCount.slice(1,2)}}</p>
+
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+   </script>
+
+    <!-- 引入flexible来进行rem布局 -->
+    <script src="./lib/flexible.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 引入模板引擎-->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
