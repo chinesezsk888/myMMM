@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+
+    <link rel="stylesheet" href="./css/pagelist.css">
+
+</head>
+
+<body>
+    <div class="mmm">
+        <!-- 头部 -->
+        <div class="mm_header">
+            <div class="left">
+                <a class="logo" href="./index.html">
+                    <img src="./images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <img src="./images/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- 搜索 -->
+        <div class="mm_search">
+            <form class="form" action="#">
+                <input type="text" placeholder="请输入你想比价的商品" class="fl">
+                <input type="button" class="fr" value="搜索">
+            </form>
+        </div>
+
+        <!-- 分页页面 -->
+        <div class="caterory">
+
+            <!-- 三级菜单 -->
+            <div class="nav">
+                <div class="left">
+                    <a href="#">首页</a>><a href="#">全部分类</a>><span>电视</span>>
+                </div>
+                <div class="right">
+                    <button type="search">筛选</button>
+                </div>
+            </div>
+            <!-- 分类商品 -->
+
+
+
+            <div class="endocrator">
+                <!-- 挖个巨坑 -->
+            </div>
+
+        </div>
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <ul>
+                <li><a class="enter">登录</a></li>
+                <li><a class="register">注册</a></li>
+                <li><a class="goback"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></li>
+            </ul>
+            <p>
+                <a href="#" class="download">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+    <!--面包蟹导航渲染 -->
+    <script type="text/html" id="navTpl">
+        {{each result v i}}
+       <a href="./index.html">首页</>><a href="./category.html">全部分类</a>><span>{{v.category}}</span>>
+       {{/each}}
+    </script>
+
+
+    <!-- 商品列表的渲染 -->
+    <script type="text/html" id="productTpl">
+        {{each result v i}}
+ <div class="product">
+
+<ul data-count="{{totalCount}}" data-pagesize="{{pagesize}}">
+   <li>
+    <a href="#">
+        <div class="left">
+           {{@v.productImg}}
+        </div>
+        <div class="right">
+            <div class="title">{{v.productName}}</div>
+            <div class="other">{{v.productPrice}}</div>
+            <div class="review">
+                <span>{{v.productQuote}}</span>
+                <span>{{v.productCom}}</span>
+            </div>
+        </div>
+    </a>
+  </li>
+</ul>
+ </div>
+{{/each}}
+
+<div class="catebtn">
+    <button class="previousbtn">上一页</button>
+    <select id="select">
+        var pageidz={{pageidz}}
+        var id={{pageid}}
+        
+        <!-- 原生的模板渲染方法:循环获取下拉菜单的option-->
+        <% for(var i=1;i<=pageidz;i++) {%>
+        <option a="<%= i %>" value="<%= i %>"><%= i %>/{{pageidz}}</option> 
+        <% } %>
+    </select>
+    <button class="nextbtn">下一页</button>
+</div>
+
+ </script>
+
+    <!-- 在用模板引擎渲染数据的时候：{{each}}只用写到需要渲染的地方 -->
+
+
+
+    <!-- 引入flexible来进行rem布局 -->
+    <script src="./lib/flexible.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 引入模板引擎-->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/pagelist.js"></script>
+</body>
+
+</html>

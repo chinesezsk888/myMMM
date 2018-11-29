@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>慢慢买</title>
+    <title>分类列表</title>
 
     <link rel="stylesheet" href="./css/pageing.css">
 
@@ -81,7 +81,7 @@
     <!-- 小标题的渲染 -->
     <script type="text/html" id="smallUlTpl">
     {{each result v i}}
-    <li><a href="#">{{v.category}}</a></li>
+    <li><a href="pagelist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1">{{v.category}}</a></li>
     {{/each}}
    </script>
 
@@ -92,7 +92,7 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <!-- 引入模板引擎-->
     <script src="./lib/artTemplate/template-web.js"></script>
-    <script src="./js/pageing.js"></script>
+    <script src="./js/category.js"></script>
 </body>
 
 </html>

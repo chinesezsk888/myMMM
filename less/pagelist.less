@@ -1,0 +1,137 @@
+@import "./common.less";
+//搜索框
+.mm_search {
+    width: 100%;
+    height: 50rem / @base;
+    padding: 10rem / @base;
+    background-color: #fff;
+    input[type="text"] {
+        width: 660rem / @base;
+        height: 30rem / @base;
+        padding-left: 20rem / @base;
+        padding-right: 50rem / @base;
+        font-size: 14rem / @base;
+        border-radius: 15rem / @base;
+        background-color: #f1f1f1;
+    }
+    input[type="button"] {
+        height: 30rem / @base;
+        width: 63rem / @base;
+        border: none;
+        border-radius: 15rem / @base;
+        background-color: @myColor;
+        font-size: 16rem / @base;
+        color: #fff;
+        line-height: 30rem / @base;
+    }
+}
+
+.caterory {
+    width: 100%;
+    margin-bottom: 10rem/@base; //三级导航
+    .nav {
+        width: 100%;
+        height: 39rem/@base;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14rem/@base;
+        line-height: 39rem/@base;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 0 10rem/@base;
+        background: linear-gradient(to bottom, #FCFCFC, #EEEEEE);
+        button {
+            width: 60rem/@base;
+            height: 28rem/@base;
+            text-align: center;
+            line-height: 24rem/@base;
+            font-size: 14rem/@base;
+            border-radius: 6rem/@base;
+            background: linear-gradient(to bottom, #E0E0E0, #FCFCFC);
+            border: none;
+            box-shadow: 0 1rem/@base 2rem/@base;
+        }
+    }
+    ul {
+        width: 100%;
+        li {
+            background-color: #fff;
+            width: 100%;
+            height: 120rem/@base;
+            border-bottom: 1px solid #ccc;
+            padding: 10rem/@base;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                padding-left: 100rem/@base;
+                position: relative;
+                .left {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100rem/@base;
+                    height: 100rem/@base;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .right {
+                    width: 100%;
+                    height: 100%;
+                    text-indent: 15rem/@base;
+                    .title {
+                        width: 100%;
+                        height: 50rem/@base;
+                        font-size: 16rem/@base;
+                        font-weight: normal;
+                    }
+                    .other {
+                        font-size: 18rem/@base;
+                        color: red;
+                        height: 30rem/@base;
+                        
+                    }
+                    .review {
+                        font-size: 12rem/@base;
+                        span:nth-child(1) {
+                            margin-right: 5rem/@base;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .catebtn{
+        width:100%;
+        height:48rem/@base;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-end;
+        button{
+         margin:0 120rem/@base;
+         width:80rem/@base;
+         height:36rem/@base;
+         background: linear-gradient(to bottom, #E0E0E0, #FCFCFC);
+         border-radius: 4rem/@base;
+         border: 1px solid #ccc;
+         box-sizing: border-box;
+         font-size: 14rem/@base;
+         padding: 5rem/@base;
+         
+        }
+        select{
+            width:75rem/@base;
+            height:36rem/@base;
+            font-size: 16rem/@base;
+             padding: 5rem/@base 0;
+
+
+         
+        }
+    }
+
+
+}
