@@ -75,6 +75,7 @@
     <script type="text/html" id="navTpl">
         {{each result v i}}
        <a href="./index.html">首页</>><a href="./category.html">全部分类</a>><span>{{v.category}}</span>>
+        
        {{/each}}
     </script>
 
@@ -87,6 +88,7 @@
 <ul data-count="{{totalCount}}" data-pagesize="{{pagesize}}">
    <li>
     <a href="detile.html?productid={{v.productId}}">
+        
         <div class="left">
            {{@v.productImg}}
         </div>

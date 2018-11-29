@@ -1,28 +1,33 @@
 $(function () {
-
+   
     //1.功能1：一进入页面，就开始渲染面包蟹导航
     //1.1获取该页面中的参数
     var add = decodeURI(location.search);
     //    console.log(add);
     //截取字符串去掉？
     add = add.slice('1');
-    // console.log(add);
+    console.log(add);
     //切割字符串成数组
     var arrAdd = add.split('&');
-    // console.log(arrAdd);
+    
     //存入对象
     var obj = [];
+    // console.log(obj);
     arrAdd.forEach(function (v, i) {
         var key = v.split('=')[0];
         var value = v.split('=')[1];
         obj[key] = value;
+        
     })
-    // console.log(obj);
-    //获取categoryid
-
-
+    
+    console.log(obj);
+    //获取category将其存入本地中
+    var cateName=obj['category'];
+    // console.log(cateName);
+    localStorage.setItem("cate",cateName);
+   //获取categoryid
     var cateid = obj['categoryid'];
-
+    
     render(cateid);
     // console.log(cateid);
     function render(id) {
@@ -32,7 +37,7 @@ $(function () {
             data: "",
             dataType: "json",
             success: function (info) {
-                // console.log(info);
+                console.log(info);
                 var htmlStr = template('navTpl', info);
                 $('.nav .left').html(htmlStr);
             }

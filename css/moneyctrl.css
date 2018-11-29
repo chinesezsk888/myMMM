@@ -319,181 +319,136 @@ body {
 .mm_footer p span {
   font-size: 0.16rem;
 }
-.mm_search {
-  width: 100%;
+.mm_header {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 0.66666667rem;
-  padding: 0.13333333rem;
-  background-color: #fff;
-}
-.mm_search input[type="text"] {
-  width: 8.8rem;
-  height: 0.4rem;
-  padding-left: 0.26666667rem;
-  padding-right: 0.66666667rem;
-  font-size: 0.18666667rem;
-  border-radius: 0.2rem;
-  background-color: #f1f1f1;
-}
-.mm_search input[type="button"] {
-  height: 0.4rem;
-  width: 0.84rem;
-  border: none;
-  border-radius: 0.2rem;
-  background-color: #ff841d;
-  font-size: 0.21333333rem;
-  color: #fff;
-  line-height: 0.4rem;
-}
-.detile {
   width: 100%;
-}
-.detile .top {
-  width: 100%;
-  margin-bottom: 0.04rem;
-  box-shadow: 0 0.06666667rem 0.06666667rem #7a7a7a;
-}
-.detile .top .nav {
-  width: 100%;
-  height: 0.52rem;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.18666667rem;
-  line-height: 0.52rem;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  padding: 0 0.13333333rem;
-  background: linear-gradient(to bottom, #fcfcfc, #eeeeee);
-}
-.detile .top .nav button {
-  width: 0.8rem;
-  height: 0.37333333rem;
-  text-align: center;
-  line-height: 0.32rem;
-  font-size: 0.18666667rem;
-  border-radius: 0.08rem;
-  background: linear-gradient(to bottom, #e0e0e0, #fcfcfc);
-  border: none;
-  box-shadow: 0 0.01333333rem 0.02666667rem;
-}
-.detile .top .prodetile {
-  width: 100%;
-  background-color: #fff;
-  padding-top: 0.26666667rem;
-  padding-bottom: 0.13333333rem;
-}
-.detile .top .prodetile .title {
-  width: 100%;
-  height: 1.86666667rem;
-  font-size: 0.24rem;
-  text-align: center;
-  font-weight: normal;
-}
-.detile .top .prodetile .img {
-  width: 100%;
-  text-align: center;
-}
-.detile .top .prodetile .img img {
-  width: 2.26666667rem;
-  height: 2.26666667rem;
-  display: block;
-  margin: 0 auto;
-}
-.detile .top ul {
-  width: 100%;
-  display: flex;
-  border-top: 1px solid #C14D00;
-  border-bottom: 1px solid #C14D00;
-}
-.detile .top ul li {
-  width: 33.33%;
-}
-.detile .top ul li a {
-  display: block;
-  width: 100%;
-  height: 0.45333333rem;
-  background-color: #FFC62B;
-  border-right: 1px solid #C14D00;
-  font-size: 0.21333333rem;
-  text-align: center;
-  line-height: 0.45333333rem;
-  box-sizing: border-box;
-  color: #fff;
-  font-weight: bold;
-}
-.detile .top ul li:nth-child(1) a {
-  background-color: #FF9813;
-}
-.detile .top ul li:nth-last-child(1) a {
-  border-right: none;
-}
-.detile .top .table {
-  font-size: 0.18666667rem;
-  height: 0.53333333rem;
-  line-height: 0.53333333rem;
-}
-.detile .top .table img {
-  display: block;
-  width: 0.21333333rem;
-  height: 0.21333333rem;
-  margin: 0.16rem auto;
-}
-.detile .top .table .red {
-  text-align: right;
-  padding: 0 0.13333333rem;
-  color: red;
-}
-.detile .top .note {
-  width: 100%;
-  height: 0.4rem;
-  padding: 0.06666667rem 0.13333333rem;
-  border-top: 1px solid #ccc;
-}
-.detile .top .note p {
-  font-size: 0.16rem;
-}
-.detile .comment {
-  width: 100%;
-}
-.detile .comment .header {
-  width: 100%;
-  height: 0.45333333rem;
-  background-color: #DBDBDB;
-  font-size: 0.18666667rem;
-  text-align: center;
-  line-height: 0.45333333rem;
-}
-.detile .comment li {
-  width: 100%;
-  padding: 0.13333333rem;
-  padding-bottom: none;
-  background-color: #fff;
   border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  padding-left: 0.58666667rem;
+  padding-right: 0.64rem;
+  background: #FF841D;
 }
-.detile .comment li .time {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.16rem;
-  color: #A0B4C5;
+.mm_header .left,
+.mm_header .right {
+  position: absolute;
+  top: 0;
+  height: 100%;
 }
-.detile .comment li .source {
-  font-size: 0.16rem;
-  color: #A0B4C5;
-  text-align: right;
+.mm_header .left {
+  left: 0;
+  width: 0.58666667rem;
+  margin: 0;
+  padding: 0.16rem;
 }
-.detile .comment li .article {
-  font-size: 0.16rem;
-}
-.detile .comment .more {
+.mm_header .left a {
+  display: block;
+  height: 100%;
   width: 100%;
-  height: 0.8rem;
-  background-color: #fff;
-  padding: 0.13333333rem 0.2rem;
 }
-.detile .comment .more button {
+.mm_header .left a .icon {
   width: 100%;
   height: 100%;
-  background-color: #DADADA;
-  border-radius: 0.13333333rem;
-  border: none;
+  background: url('../images/img/icback.svg') center center no-repeat;
+  background-size: 100% 100%;
+}
+.mm_header .right {
+  right: 0;
+  width: 0.64rem;
+  padding: 0.09333333rem;
+}
+.mm_header .right img {
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+}
+.mm_header p {
+  height: 100%;
+  width: 100%;
+  line-height: 0.66666667rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.26666667rem;
+}
+.endocrator ul {
+  width: 100%;
+}
+.endocrator ul li {
+  width: 100%;
+  height: 1.73333333rem;
+  padding: 0.18666667rem 0.10666667rem;
+  background-color: #fff;
+}
+.endocrator ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 1.33333333rem;
+  position: relative;
+}
+.endocrator ul li a .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+}
+.endocrator ul li a .left img {
+  width: 100%;
+  height: 100%;
+}
+.endocrator ul li a .right {
+  width: 100%;
+  height: 100%;
+  text-indent: 0.2rem;
+}
+.endocrator ul li a .right .title {
+  width: 100%;
+  height: 0.8rem;
   font-size: 0.18666667rem;
+  font-weight: normal;
+}
+.endocrator ul li a .right .title span {
+  color: red;
+}
+.endocrator ul li a .right .other {
+  font-size: 0.16rem;
+  color: #B6A1B6;
+  display: flex;
+  justify-content: space-between;
+}
+.endocrator ul li a .right .other p:nth-child(2) i {
+  height: 0.2rem;
+  width: 0.18666667rem;
+  background: url("../images/img/comment.svg") center no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 0.05333333rem;
+}
+.endocrator .catebtn {
+  width: 100%;
+  height: 0.90666667rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.endocrator .catebtn button {
+  margin: 0 1.6rem;
+  width: 1.06666667rem;
+  height: 0.48rem;
+  background: linear-gradient(to bottom, #e0e0e0, #fcfcfc);
+  border-radius: 0.05333333rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 0.18666667rem;
+  padding: 0.06666667rem;
+}
+.endocrator .catebtn select {
+  width: 1rem;
+  height: 0.48rem;
+  font-size: 0.21333333rem;
+  padding: 0.06666667rem 0;
 }

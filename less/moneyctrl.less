@@ -1,0 +1,161 @@
+@import "./common.less";
+// 头部
+.mm_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50rem/@base;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 44rem/@base;
+    padding-right: 48rem/@base;
+    background: #FF841D;
+    .left,
+    .right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    .left {
+        left: 0;
+        width: 44rem/@base; // padding: 0;
+        margin: 0;
+        padding: 12rem/@base;
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            .icon {
+                width: 100%;
+                height: 100%; // margin-top: 10rem/@base;
+                background: url('../images/img/icback.svg') center center no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .right {
+        right: 0;
+        width: 48rem/@base;
+        padding: 7rem/@base;
+        img {
+            width: 34rem/@base;
+            height: 34rem/@base;
+        }
+    }
+    p{
+        height:100%;
+        width:100%;
+        line-height:50rem/@base;  	
+        text-align: center;
+        color:#fff;
+        font-weight: bold;
+        font-size: 20rem/@base;
+
+      
+    
+    }
+}
+
+//折扣产品
+.endocrator {
+    ul{
+        width: 100%;
+        //  margin-bottom: 20rem/@base;
+        li{
+          width:100%;
+          height:130rem/@base;
+          padding: 14rem/@base 8rem/@base;
+          background-color: #fff;
+         
+        //   border-bottom: 1px solid #ccc;
+          a{
+            width:100%;
+            height:100%;
+            display: block;
+            padding-left: 100rem/@base;
+            position: relative;
+            .left{
+            position: absolute;
+            left: 0;
+            top:0;
+            width:100rem/@base;
+            height:100rem/@base;
+            img{
+              width:100%;
+              height:100%;
+  
+             }
+            }
+            .right{
+              width:100%;
+              height:100%;
+              text-indent: 15rem/@base;
+              .title{
+                width:100%;
+                height:60rem/@base;
+                font-size: 14rem/@base;
+                font-weight: normal;
+                span{
+                  color:red;
+  
+                }
+              }
+              .other{
+                font-size: 12rem/@base;
+                color:#B6A1B6;
+                display: flex;
+                justify-content: space-between;      
+                p:nth-child(2){
+                   i{
+                  height: 15rem/@base;
+                  width:14rem/@base;
+                  background: url("../images/img/comment.svg") center no-repeat ;
+                  // background-size: auto 100%;
+                  // background-repeat: no-repeat;
+                  // background-position: center;
+                  background-size: 100% 100%;
+                  vertical-align: middle;
+                  display: inline-block;
+                  margin-right: 4rem/@base;
+                }
+                }
+               
+              }
+            }
+          }
+          
+        }
+    }
+    .catebtn{
+        width:100%;
+        height:68rem/@base;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+       
+        button{
+         margin:0 120rem/@base;
+         width:80rem/@base;
+         height:36rem/@base;
+         background: linear-gradient(to bottom, #E0E0E0, #FCFCFC);
+         border-radius: 4rem/@base;
+         border: 1px solid #ccc;
+         box-sizing: border-box;
+         font-size: 14rem/@base;
+         padding: 5rem/@base;
+         
+        }
+        select{
+            width:75rem/@base;
+            height:36rem/@base;
+            font-size: 16rem/@base;
+             padding: 5rem/@base 0;
+
+
+         
+        }
+    }
+
+
+}

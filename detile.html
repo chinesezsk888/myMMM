@@ -31,8 +31,26 @@
                 <input type="button" class="fr" value="搜索">
             </form>
         </div>
-       
-        <!--  -->
+
+        <!-- 产品详情 -->
+        <div class="detile">
+            <!-- 三级导航 -->
+            <!-- <div class="nav">
+                <div class="left">
+                    
+                    
+                </div>
+                <div class="right">
+                    <button type="search">筛选</button>
+                </div>
+            </div>
+           
+        <div class="prodetile">
+           
+        </div> -->
+
+
+        </div>
 
 
 
@@ -53,7 +71,85 @@
         </div>
     </div>
 
-    
+  <!--面包蟹导航渲染 -->
+  <script type="text/html" id="navTpl">
+    {{each result v i}}
+    <!-- 三级导航 -->
+  <div class="top">
+    <div class="nav">
+            <div class="left">
+                <!-- 挖坑 -->
+                <a href="./index.html">首页</a>><a href="./pagelist.html?categoryid={{v.categoryId}}&category={{cateName}}&pageid=1">{{cateName}}</a>><a>{{loadAdd[0]}}</a>>
+            </div>
+            <div class="right">
+                <button type="search">筛选</button>
+            </div>
+        </div>
+        <!-- 详情部分 -->
+    <div class="prodetile">
+        <div class="title">
+            <p>{{v.productName}}</p>
+        </div>
+        <div class="img">
+           {{@v.productImg}}
+        </div>
+    </div>
+  <ul>
+      <li><a href="#">比价购买</a></li>
+      <li><a href="#">产品参数</a></li>
+      <li><a href="#">评论(2322)</a></li>
+  </ul>
+  <div class="table">{{@v.bjShop}}</div>
+  <div class="note">
+      <p>
+  * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </p>
+  </div>
+</div>
+   {{/each}}
+
+    <div class="comment">
+        <!-- <div class="header">网友评价</div>
+        <ul>
+            <li>
+                <div class="time">
+                    <p></p>
+                    <p></p>
+                </div>
+            </li>
+        </ul> -->
+       <!-- 挖坑 -->
+    </div>
+
+</script>
+
+<!-- 商品详情介绍 -->
+<script type="text/html" id="detileTpl">
+
+<div class="header">网友评价</div>
+{{each result v i}}
+<ul>
+    <li>
+        <div class="time">
+            <p>{{v.comName}}</p>
+            <p>{{v.comTime}}</p>
+        </div>
+        <div class="source">
+            <p>{{v.comFrom}}</p>
+        </div>
+        <div class="article">
+           {{v.comContent}}
+        </div>
+    </li>
+</ul>
+{{/each}}
+<div class="more">
+    <button>查看更多评价</button>
+</div>
+</script>
+
+
+
 
     <!-- 引入flexible来进行rem布局 -->
     <script src="./lib/flexible.js"></script>
