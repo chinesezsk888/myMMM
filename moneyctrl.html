@@ -29,19 +29,6 @@
         <!-- 省钱 -->
         <div class="endocrator">
             <!-- 挖个巨坑 -->
-
-            <!-- <div class="catebtn">
-                    <button class="previousbtn">上一页</button>
-                    <select id="select">
-                        var pageidz={{pageidz}}
-                        var id={{pageid}}
-                      
-                        <% for(var i=1;i<=pageidz;i++) {%>
-                        <option a="<%= i %>" value="<%= i %>"><%= i %>/{{pageidz}}</option> 
-                        <% } %>
-                    </select>
-                    <button class="nextbtn">下一页</button>
-                </div> -->
         </div>
 
 
@@ -66,9 +53,9 @@
     <!-- 渲染 -->
     <script type="text/html" id="endocratorTpl">
         {{each result v i}}
-    <ul>
+    <ul data-count="{{totalCount}}" data-pagesize="{{pagesize}}">
         <li>
-            <a href="#">
+            <a href="./moneyproduct.html?productid={{v.productId}}">
                 <div class="left">
                    {{@v.productImgSm}}
                 </div>
@@ -87,9 +74,8 @@
     <div class="catebtn">
         <button class="previousbtn">上一页</button>
             <select id="select">
-                var pageidz={{pageidz}}
-                var id={{pageid}}
-                      
+                var pageidz={{pageidz}}  
+                <!-- 遍历pageidz生成下来菜单 -->
                 <% for(var i=1;i<=pageidz;i++) {%>
                 <option a="<%= i %>" value="<%= i %>"><%= i %>/{{pageidz}}</option> 
                 <% } %>

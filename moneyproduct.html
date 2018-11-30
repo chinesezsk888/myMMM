@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>省钱控</title>
+
+    <link rel="stylesheet" href="./css/moneyproduct.css">
+</head>
+
+<body>
+    <div class="mmm">
+        <!-- 头部 -->
+        <div class="mm_header">
+            <div class="left">
+                <a class="logo" href="./moneyctrl.html">
+                    <div class="icon"></div>
+                </a>
+            </div>
+            <p>国内折扣</p>
+
+            <div class="right">
+                <img src="./images/header_app.png" alt="">
+            </div>
+        </div>
+
+        <!-- 折扣区 -->
+       <div class="discoundTitle">
+            <!-- 挖个巨坑渲染 -->
+    
+       </div>
+
+
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <ul>
+                <li><a class="enter">登录</a></li>
+                <li><a class="register">注册</a></li>
+                <li><a class="goback"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></li>
+            </ul>
+            <p>
+                <a href="#" class="download">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+
+<!-- 折扣详情的渲染 -->
+<script type="text/html" id="discoundTitleTpl">
+    {{each result v i}}
+    <!-- 介绍部分 -->
+    <div class="detail">
+        <h3>{{v.productName}}</h3>
+        <p><span>{{v.productFrom}}</span><span>{{v.productTime}}</span><span>{{v.productTips}}</span></p>
+        <div class="info">
+            <div class="left">
+                <p>{{v.productInfo}}</p>
+                <p>{{v.productInfo1}}</p>
+            </div>
+            <div class="right">
+               {{@v.productImgSm}}
+            </div>
+        </div>
+       <div class="bigimg">
+          {{@v.productImgLg}}
+       </div>
+
+    </div>
+    <!-- 存货部分 -->
+    {{@v.productCity}}
+    <!-- 购买 -->
+    <div class="bug"><a href="#">前往购买</a></div>
+    <!-- 二维码 -->
+    <div class="code"><img src="./images/mmbweixin2.png" alt=""></div>
+    <!--评论区 -->
+    {{@v.productComment}}
+    {{/each}}
+</script>
+
+
+   
+
+    <!-- 引入flexible来进行rem布局 -->
+    <script src="./lib/flexible.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 引入模板引擎-->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/moneyproduct.js"></script>
+</body>
+
+</html>
