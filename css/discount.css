@@ -408,6 +408,7 @@ body {
 .discoundTitle .detail .info .left p {
   font-size: 0.21333333rem;
   color: black;
+  line-height: 0.4rem;
 }
 .discoundTitle .detail .info .right {
   position: absolute;
@@ -421,33 +422,12 @@ body {
   height: 100%;
 }
 .discoundTitle .detail .bigimg {
-  width: 5.33333333rem;
-  height: 5.33333333rem;
+  width: 2.66666667rem;
+  height: 2.66666667rem;
 }
 .discoundTitle .detail .bigimg img {
   width: 100%;
   height: 100%;
-}
-.discoundTitle #disstorck {
-  width: 1.6rem;
-  box-shadow: 0.05333333rem 0.08rem 0.10666667rem #eeeeee, -0.05333333rem -0.02666667rem 0.05333333rem #eeeeee;
-  margin: 0 auto;
-  padding: 0.13333333rem;
-}
-.discoundTitle #disstorck li {
-  width: 100%;
-  border-bottom: 1px dashed #ccc;
-  font-size: 0.16rem;
-}
-.discoundTitle #disstorck li span {
-  display: block;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.discoundTitle #disstorck li strong {
-  color: orange;
-  font-weight: normal;
 }
 .discoundTitle .bug {
   width: 100%;
@@ -474,25 +454,22 @@ body {
   width: 100%;
   height: 100%;
 }
-.discoundTitle .cu-content-pl {
-  width: 100%;
-}
-.discoundTitle .cu-content-pl .tit {
+.discoundTitle .tit {
   font-size: 0.21333333rem;
 }
-.discoundTitle .cu-content-pl .reply {
+.discoundTitle .reply {
   width: 100%;
   padding: 0.06666667rem;
 }
-.discoundTitle .cu-content-pl .reply .form {
+.discoundTitle .reply .form {
   width: 100%;
   border: 1px solid #ccc;
   box-shadow: 0.01333333rem 0.01333333rem #cccccc, -0.01333333rem -0.01333333rem #cccccc;
 }
-.discoundTitle .cu-content-pl .reply .form #ctl00_ContentBody_txt_nr {
+.discoundTitle .reply .form #ctl00_ContentBody_txt_nr {
   width: 100%;
 }
-.discoundTitle .cu-content-pl .reply .form .ctrl {
+.discoundTitle .reply .form .ctrl {
   width: 100%;
   padding: 0;
   text-align: right;
@@ -501,52 +478,15 @@ body {
   box-sizing: border-box;
   font-size: 0.24rem;
 }
-.discoundTitle .cu-content-pl .reply .form .ctrl input {
+.discoundTitle .reply .form .ctrl input {
   font-size: 0.24rem;
   height: 0.44rem;
   width: 1.33333333rem;
   background-color: #FF841D;
   border: none;
 }
-.discoundTitle .cu-content-pl .list {
+.discoundTitle #newcomment {
   width: 100%;
-}
-.discoundTitle .cu-content-pl .list li {
-  width: 100%;
-  display: flex;
-  margin-top: 0.13333333rem;
-  padding: 0.2rem;
-}
-.discoundTitle .cu-content-pl .list li .userimg {
-  width: 0.53333333rem;
-  height: 100%;
-}
-.discoundTitle .cu-content-pl .list li .userimg img {
-  width: 0.53333333rem;
   height: 0.53333333rem;
-  border-radius: 0.53333333rem;
-}
-.discoundTitle .cu-content-pl .list li .con {
-  width: 100%;
-  padding-left: 0.13333333rem;
-}
-.discoundTitle .cu-content-pl .list li .con .name {
-  width: 100%;
-  font-size: 0.18666667rem;
-}
-.discoundTitle .cu-content-pl .list li .con .name .username {
-  float: left;
-  color: #67A2D7;
-}
-.discoundTitle .cu-content-pl .list li .con .name .time {
-  float: right;
-  color: #99A6C4;
-}
-.discoundTitle .cu-content-pl .list li .con .content {
-  font-size: 0.21333333rem;
-  display: flex;
-}
-.discoundTitle .cu-content-pl .list li .con .content img {
-  width: 0.26666667rem;
-  height: 0.26666667rem;
+  margin-bottom: 0.26666667rem;
 }
