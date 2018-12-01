@@ -27,7 +27,7 @@ $(function () {
                 });
             //3.给第一个li添加类
             $('.mm_roll li:eq(0)').find('a').addClass('current');
-
+            
         }
        
 
@@ -40,9 +40,34 @@ $(function () {
      })
 
 
+     //5.一进入页面默认渲染第一个li
+     var productId=0;//记录当前li的id
+      render(productId);
+     function render(b){
+         $.ajax({
+             type:"get",
+             url:"http://127.0.0.1:9090/api/getbaicaijiaproduct?titleid="+b,
+             data:"",
+             dataType:"json",
+             success:function(info){
+                 console.log(info);
+                 var htmlStr=template('listpriceTpl',info);
+                 $('.listprice').html(htmlStr);
+             }
+         })
+     }
 
+     //6.点击li进行相应的跳转
+     $('.mm_roll .left').on('click','li',function(){
+         var id=$(this).data('id');
+         productId=id;
+         render(productId);
+     })
 
-
+    //7.返回顶部
+    $('.goback').click(function(){
+        $('html').scrollTop(0);
+    })
 
 
     

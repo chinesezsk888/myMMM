@@ -24,19 +24,25 @@
                 <img src="./images/header_app.png" alt="">
             </div>
         </div>
-       <!-- 区域滚动 -->
-       <div class="mm_roll">
-           <div class="left">
-               <ul class="clearfix">
-                 <!-- 挖坑 -->
-                
-               </ul>
-           </div>  
-           <div class="right">
-               <div class="icon-search"></div>
-           </div>
-       </div>
-      
+        <!-- 区域滚动 -->
+        <div class="mm_roll">
+            <div class="left">
+                <ul class="clearfix">
+                    <!-- 挖坑 -->
+                </ul>
+            </div>
+            <div class="right">
+                <div class="icon-search"></div>
+            </div>
+        </div>
+
+        <!-- 白菜价列表 -->
+        <!-- <div class="listprice">
+           
+        </div> -->
+        <ul class="listprice"> 
+         <!-- 挖坑 -->
+        </ul>
 
 
 
@@ -58,15 +64,35 @@
 
 
 
-<!-- 区域滚动渲染 -->
-<script type="text/html" id="bcjTpl">
-  {{each result v i}}
-  <li><a href="#">{{v.title}}</a></li>
+    <!-- 区域滚动渲染 -->
+    <script type="text/html" id="bcjTpl">
+        {{each result v i}}
+  <li data-id="{{v.titleId}}"><a href="#">{{v.title}}</a></li>
   {{/each}}
 </script>
 
+    <!-- 白菜列表渲染 -->
+    <script type="text/html" id="listpriceTpl">
+    {{each result v i}}
+       <li>
+         <!-- <a href="#">  -->
+             <div class="left">{{@v.productImg}}</div>
+           
+            <div class="right">
+                 
+                <p class="p1"> {{@v.productName}}</p> 
+               <p class="p2"> {{@v.productPrice}}</p>
+                <div class="progress">
+                    {{@v.productCouponRemain}}
+                </div>
+                <div class="juan">{{@v.productCoupon}}</div> 
+                <div class="content">{{@v.productHref}}</div> 
+             </div> 
+       
+    </li>
+  {{/each}}
+</script>
 
-   
 
     <!-- 引入flexible来进行rem布局 -->
     <script src="./lib/flexible.js"></script>
