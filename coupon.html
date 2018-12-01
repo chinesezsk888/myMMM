@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券</title>
+
+    <link rel="stylesheet" href="./css/coupon.css">
+</head>
+
+<body>
+    <div class="mmm">
+        <!-- 头部 -->
+        <div class="mm_header">
+            <div class="left">
+                <a class="logo" href="./index.html">
+                    <div class="icon"></div>
+                </a>
+            </div>
+            <p>优惠券</p>
+            <div class="right">
+                <img src="./images/header_app.png" alt="">
+            </div>
+        </div>
+      
+        <!-- 优惠部分 -->
+        <div class="discount">
+            <ul>
+               <!-- 挖坑 -->
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <ul>
+                <li><a class="enter">登录</a></li>
+                <li><a class="register">注册</a></li>
+                <li><a class="goback"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></li>
+            </ul>
+            <p>
+                <a href="#" class="download">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+<!-- 优惠部分渲染 -->
+<script type="text/html" id="discountTpl">
+    {{each result v i}}
+    <li data-name="{{v.couponTitle}}">
+        <a href="./couponproduct.html?couponid={{v.couponId}}">
+          <img src="{{v.couponImg}}" alt="">
+          <p>{{v.couponTitle}}</p>
+       </a>
+   </li>
+    {{/each}}
+</script>
+  
+
+
+    <!-- 引入flexible来进行rem布局 -->
+    <script src="./lib/flexible.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 引入模板引擎-->
+    <script src="./lib/artTemplate/template-web.js"></script>
+  
+    <script src="./js/coupon.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@import "./common.less";
+// 头部
+
+.mm_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50rem/@base;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 44rem/@base;
+    padding-right: 48rem/@base;
+    background: #F4483E;
+    .left,
+    .right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    .left {
+        left: 0;
+        width: 44rem/@base; 
+        margin: 0;
+        padding: 12rem/@base;
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            .icon {
+                width: 100%;
+                height: 100%; 
+                background: url('../images/img/icback.svg') center center no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .right {
+        right: 0;
+        width: 48rem/@base;
+        padding: 7rem/@base;
+        img {
+            width: 34rem/@base;
+            height: 34rem/@base;
+        }
+    }
+    p {
+        height: 100%;
+        width: 100%;
+        line-height: 50rem/@base;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20rem/@base;
+    }
+}
+// 优惠商品
+.commodity{
+    width:100%;
+    background-color: #fff;
+    padding-top: 5rem/@base;
+    .word{
+        width:100%;
+        font-size: 12rem/@base;
+        color:#ccc;
+        text-align: center;
+    }
+    ul{
+        width:100%;
+        li{
+            width:100%;
+            height:120rem/@base;
+            padding: 10rem/@base;
+            padding-right:0;
+            border-bottom: 1px solid #ccc;
+            a{
+                display: block;
+                width:100%;
+                height:100%;
+                padding-left: 120rem/@base;
+                position: relative;
+                color:black;
+
+                .left{
+                    width:120rem/@base;
+                    height:100%;
+                    padding: 10rem/@base;
+                    position: absolute;
+                    left:0;
+                    top:0;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .right{
+                    width:100%;
+                    height:100%;
+                    padding-left: 5rem/@base;
+                    padding-right: 30rem/@base;
+                    position: relative;
+                    .title{
+                        font-size: 14rem/@base;
+                    }
+                    .p1{
+                        font-size: 14rem/@base;
+                        font-weight: bold;
+                        margin-top: 5rem/@base;
+                    }
+                    .p2{
+                        font-size: 12rem/@base;
+                        color:red;
+                        position: absolute;
+                        left:0;
+                        bottom:5rem/@base;
+                    }
+                    
+                }
+            }
+            a:hover{
+                text-decoration: none;
+            }
+
+        }
+
+    }
+    
+}
+//模态框
+#myModal{
+    .modal-dialog{
+       
+     width:250rem/@base;
+     height:160rem/@base;
+     position: absolute;
+     padding: 0 45rem/@base;
+     left:50%;
+     top:50%;
+     transform:translate(-50%,-50%);
+     border:1px solid #ccc;
+    //  background-color: lime;
+    .swiper{
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        padding: 0 45rem/@base;
+       
+        .swiper-container{
+            width:100%;
+            height:100%;
+            padding: 0 45rem/@base;
+
+        ul{
+            width:158rem/@base;
+            height:158rem/@base;
+            li{
+                width:100%;
+                height:100%;
+            }
+        }
+        .swiper-button-prev{
+            position: absolute;
+            left:-44rem/@base;
+            top:50%;
+        }
+        .swiper-button-next{
+            position: absolute;
+            right:-44rem/@base;
+            top:50%;
+        }
+        }    
+    }
+}
+}

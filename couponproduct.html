@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券</title>
+
+    <link rel="stylesheet" href="./css/couponproduct.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.css">
+</head>
+
+<body>
+    <div class="mmm">
+        <!-- 头部 -->
+        <div class="mm_header">
+            <div class="left">
+                <a class="logo" href="./coupon.html">
+                    <div class="icon"></div>
+                </a>
+            </div>
+            <p>优惠券</p>
+            <div class="right">
+                <img src="./images/header_app.png" alt="">
+            </div>
+        </div>
+
+        <!-- 优惠商品 -->
+        <div class="commodity">
+
+            <!-- 挖坑 -->
+        </div>
+
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <ul>
+                <li><a class="enter">登录</a></li>
+                <li><a class="register">注册</a></li>
+                <li><a class="goback"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></li>
+            </ul>
+            <p>
+                <a href="#" class="download">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+    <!-- 模态框 -->
+
+    <!-- 模态框 -->
+    <!-- 外层div是蒙层 -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <!-- 内层模态框 -->
+        <div class=" modal-dialog modal-sm">
+            <div class="swiper">
+                <div class="swiper-container">
+                    <!-- 轮播图图片 -->
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="./images/img/categorylist.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/gengduo.png" alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/haitao.png" alt=""></a></li>
+                    </ul>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- 优惠商品部分渲染 -->
+    <script type="text/html" id="couponproductTpl">
+        <div class="word">
+     --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+    {{each result v i}}
+       <ul>
+            <li>
+                <a href="#">
+                    <div class="left">
+                       {{@v.couponProductImg}}
+                    </div>
+                    <div class="right">
+                        <div class="title">{{v.couponProductName}}</div>
+                        <p class="p1">{{v.couponProductPrice}}</p>
+                        <p class="p2">{{v.couponProductTime}}</p>
+                        <div class="icon">
+
+                        </div>
+                   </div>
+               </a>
+             </li>
+        </ul>
+    {{/each}}
+</script>
+
+
+
+    <!-- 引入flexible来进行rem布局 -->
+    <script src="./lib/flexible.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 引入模板引擎-->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入bootstrap框架 -->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入swipe实现轮播 -->
+    <script src="./lib/swiper/js/swiper.min.js"></script>
+
+    <script src="./js/couponproduct.js"></script>
+</body>
+
+</html>

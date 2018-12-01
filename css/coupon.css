@@ -372,186 +372,31 @@ body {
   font-weight: bold;
   font-size: 0.26666667rem;
 }
-.mm_roll {
+.discount {
   width: 100%;
-  height: 0.53333333rem;
   background-color: #fff;
-  margin-bottom: 0.13333333rem;
-  padding-right: 0.53333333rem;
-  position: relative;
 }
-.mm_roll .left {
-  width: 100%;
-  height: 0.53333333rem;
-  overflow: hidden;
-}
-.mm_roll .left ul {
-  height: 100%;
-}
-.mm_roll .left ul li {
-  height: 100%;
-  float: left;
-  border-bottom: 2px solid transparent;
-}
-.mm_roll .left ul li a {
-  display: block;
-  height: 100%;
-  font-size: 0.21333333rem;
-  line-height: 0.50666667rem;
-  padding: 0 0.2rem;
-}
-.mm_roll .left ul li a.current {
-  border-bottom: 2px solid red;
-  color: red;
-}
-.mm_roll .right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 0.53333333rem;
-  height: 100%;
-  background-color: #FBFBFB;
-}
-.mm_roll .right .icon-search {
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17' height='17'><path fill='#565656' d='M978.261333 430.321067c0 157.2864-127.488 284.808533-284.8768 284.808533-157.218133 0-284.706133-127.488-284.706133-284.808533s127.488-284.7744 284.706133-284.7744c22.254933 0 43.793067 2.798933 64.648533 7.68l63.2832-192.136533c3.208533-9.352533 14.916267-14.062933 26.248533-10.410667 11.298133 3.720533 17.8176 14.5408 14.848 23.8592l-63.249067 191.488C904.055467 208.078933 978.261333 310.4448 978.261333 430.321067zM693.384533 184.834133c-135.5776 0-245.384533 109.909333-245.384533 245.521067 0 135.611733 109.943467 245.486933 245.384533 245.486933 135.68 0 245.521067-109.909333 245.521067-245.486933C938.939733 294.7776 829.064533 184.834133 693.384533 184.834133zM366.4896 683.863467l-18.261333 0L98.6112 683.863467c-12.049067 0-21.8112-9.762133-21.8112-21.777067 0-12.049067 9.762133-21.8112 21.8112-21.8112l249.617067 0 5.461333 0c9.147733 15.189333 19.114667 29.832533 30.139733 43.588267L366.4896 683.863467zM297.7792 457.866667 277.6064 457.866667 98.6112 457.866667c-12.049067 0-21.8112-9.762133-21.8112-21.777067 0-12.0832 9.762133-21.8112 21.8112-21.8112l176.708267 0c0 0 0 0 0 0.034133l22.459733 0c-0.4096 7.236267-1.092267 14.404267-1.092267 21.777067S297.3696 450.6304 297.7792 457.866667zM348.2624 231.869867 326.3488 231.869867 98.6112 231.869867c-12.049067 0-21.8112-9.659733-21.8112-21.8112 0-12.0832 9.762133-21.742933 21.8112-21.742933l249.617067 0 5.973333 0 12.288 0 17.339733 0c-11.025067 13.755733-20.923733 28.3648-30.071467 43.52L348.2624 231.835733zM605.3888 5.975467l-127.0784 0-122.538667 0L337.544533 5.975467 87.927467 5.975467c-12.049067 0-21.8112-9.762133-21.8112-21.845333 0-12.0832 9.762133-21.879467 21.8112-21.879467l249.617067 0 18.261333 0 122.538667 0 127.044267 0 78.711467 0-16.0768 43.6224L605.3888 5.975467z' transform='translate(0, 812) scale(1, -1)'/></svg>");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70% 70%;
-}
-.listprice li {
-  width: 100%;
-  margin-bottom: 0.06666667rem;
-  background-color: #fff;
-  height: 2rem;
-  padding: 0.06666667rem;
-  padding-left: 1.73333333rem;
-  position: relative;
-}
-.listprice li .left {
-  padding: 0.06666667rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1.73333333rem;
-  height: 100%;
-}
-.listprice li .left img {
-  width: 100%;
-  height: 100%;
-}
-.listprice li .right {
-  width: 100%;
-  height: 100%;
-  padding-left: 0.06666667rem;
-  position: relative;
-}
-.listprice li .right .p1 {
-  font-size: 0.18666667rem;
-  height: 0.46666667rem;
-}
-.listprice li .right .p2 {
-  height: 0.46666667rem;
-  color: red;
-  font-size: 0.26666667rem;
-  font-family: 'Microsoft Yahei', 'SimSun';
-  margin-bottom: 0.13333333rem;
-}
-.listprice li .right .p2 i {
-  font-size: 0.21333333rem;
-  margin-right: 0.06666667rem;
-}
-.listprice li .right .p2 em {
-  font-size: 0.16rem;
-  margin-right: 0.02666667rem;
-}
-.listprice li .right .p2 del {
-  font-size: 0.18666667rem;
-  margin-left: 0.06666667rem;
-  color: #a8a8a8;
-}
-.listprice li .right .progress {
-  width: 100%;
-}
-.listprice li .right .progress .bar {
+.discount ul {
   width: 100%;
   display: flex;
-  font-size: 0.16rem;
-  position: relative;
-  padding-left: 1.33333333rem;
 }
-.listprice li .right .progress .bar .goquan {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 1.33333333rem;
-  height: 0.2rem;
-  border-radius: 0.10666667rem;
-  background-color: #FFB7B7;
-  border: 1px solid red;
-  box-sizing: border-box;
-  overflow: hidden;
+.discount ul li {
+  width: 15%;
+  padding: 0.13333333rem;
+  margin: 0 0.06666667rem;
 }
-.listprice li .right .progress .bar i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1.33333333rem;
-  height: 0.2rem;
-  border-radius: 0.10666667rem;
-  display: inline-block;
-  overflow: hidden;
-}
-.listprice li .right .progress .bar i em {
-  position: absolute;
-  left: 0.01333333rem;
-  top: 0;
-  display: block;
-  height: 100%;
-  border-radius: 0.06666667rem;
-  background-color: red;
-}
-.listprice li .right .progress .bar i span {
-  position: absolute;
-  left: 0;
-  top: 0;
+.discount ul li a {
   display: block;
   width: 100%;
-  height: 100%;
-  color: #fff;
-  text-align: center;
+  padding: 0.06666667rem 0.2rem;
+  border: 1px solid #ccc;
 }
-.listprice li .right .progress .bar b {
-  display: inline-block;
-  margin-left: 0.2rem;
-  color: red;
-  font-weight: normal;
+.discount ul li a img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 auto;
 }
-.listprice li .right .juan {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.discount ul li a p {
   font-size: 0.18666667rem;
-  padding: 0.06666667rem;
-  border: 1px dashed red;
-}
-.listprice li .right .content {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0.06666667rem;
-  font-size: 0.21333333rem;
-  background-color: #FF5E5D;
-  border-radius: 0.13333333rem;
-}
-.listprice li .right .content a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-}
-.mm_footer {
-  margin-top: 0.33333333rem;
+  text-align: center;
 }
