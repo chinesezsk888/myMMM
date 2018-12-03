@@ -6,13 +6,13 @@ $(function(){
       data:"",
       dataType:"json",
       success:function(info){
-        console.log(info);
+        // console.log(info);
         var src="./images/lazyload.gif";
         var loadImg="<img src='./images/lazyload.gif' alt=''>";
         var trueImg;
         info.result.forEach(function(e,i){
-            e.loadImg=loadImg;
-            e.src=src;
+            // e.loadImg=loadImg;
+            // e.src=src;
             e.trueImgSrc=e.productImg.split(' ')[1].split('src=')[1].slice(1).slice(0,-1);
             e.trueImg="<img src='./images/lazyload.gif' data-src="+e.trueImgSrc+" src=''>";
 
@@ -42,9 +42,6 @@ $(function(){
                })
            })
 
-
-
-
         //    //功能2：实现图片的懒加载
          
         //   //思路：
@@ -53,33 +50,6 @@ $(function(){
         //   //2.存到info中后，在浏览器中向下滚动，实现懒加载
           
         //  //2.2实现懒加载
-        //  $('.photo img').each(function(){
-        //     //  var src=$(this).attr('src');
-        //     if(checkShow($(this)) && isLoaded($(this))){
-        //         // var trueSrc=$(this).data('src');
-        //         // console.log(trueSrc);
-        //         $(this).attr('src',$(this).attr('data-src'));
-        //         console.log($(this).attr(src));
-             
-        //         //  load($(this));
-        //     }
-            
-        //  })
-        //  $(window).on('scroll',function(){
-        //      $('.photo img').each(function(){
-        //         //  var src=$(this).attr('src');
-        //         if(checkShow($(this)) && !isLoaded($(this))){
-        //             // var trueSrc=$(this).data('src');
-        //             // console.log(trueSrc);
-        //             $(this).attr('src',$(this).attr('data-src'));
-        //             console.log($(this).attr(src));
-
-        //             //  load($(this));
-        //         }
-                
-        //      })
-            
-        //  })
          // 需要写一个checkShow函数来判断当前img是否已经出现在了视野中
          function checkShow($img){
              //获取页面页面向上滚动的距离
@@ -105,7 +75,7 @@ $(function(){
         //加载图片
         function load($img){
             var trueSrc=$img.data('src');
-            console.log(trueSrc);
+            // console.log(trueSrc);
             $img.attr('src',trueSrc);
         }
         
