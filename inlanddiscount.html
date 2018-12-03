@@ -59,7 +59,11 @@
     <li>
         <a href="./discount.html?productid={{v.productId}}">
             <div class="photo">
+                {{if i < 4}} -->
                 {{@v.productImg}}
+                 {{else}}
+                {{@v.trueImg}}
+                 {{/if}}
             </div>
             <div class="title">{{v.productName}}</div>
             <p class="p1">{{v.productPrice}}</p>
@@ -77,6 +81,8 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <!-- 引入模板引擎-->
     <script src="./lib/artTemplate/template-web.js"></script>
+   <!-- 引入懒加载插件 -->
+    <!-- <script src="./lib/jquery.lazyload.js"></script> -->
     <script src="./js/inlanddiscount.js"></script>
 </body>
 
